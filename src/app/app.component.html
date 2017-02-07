@@ -1,0 +1,7 @@
+<main>
+  <h1>Fly Picker - Angular2 Date Picker</h1>
+  <h2>Select the dates of your flights:</h2>
+  <fly-picker (dateChanged)="onDateChanged($event)"></fly-picker>
+  <button *ngIf="startDate && endDate" class="search" type="submit" (click)="onSearchClick($event)" tabindex="0">Search</button>
+  <p *ngIf="message" class="message">{{message}}</p>
+</main>
